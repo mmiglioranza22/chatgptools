@@ -11,7 +11,9 @@ Just simple scripts and tools made with different AI models, their prompts and r
 This is done in the spirit of the timeless sayings proven right by countless workers in corporate around the world:
 
 _"This meeting could have been an email"_
+<br>
 _"This email could have been a Slack message"_
+<br>
 _"This Slack message could have been an emoji reaction"_
 
 Eventually, a new saying will appear that might replace them all: "_I'll just prompt it_"
