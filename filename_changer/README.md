@@ -2,6 +2,8 @@
 
 While creating unit tests for a big project, I went with the basic `file-name.spec.ts` convention. When I realized I needed to give a specific extension for unit and integration tests to run separatedly, I faced the choice of either renaming all 70+ files manually (a 20 min job), write a bash script and hope for the best (I really should up my bash scripting game), or finally make something useful out of ChatGPT. I have not used it for anything useful before, so why not?
 
+<br>
+
 ### Scope
 
 The task was simple, match files by extension, change it and don't destroy anything.
@@ -13,8 +15,11 @@ From this, I reasoned:
 - It should prompt for user input in order (so basically a "CLI" script)
 - It should count and show how many files would be affected (just to be sure it was staying in a given directory) and ask for confirmation.
 - Abort all if any error occurs and show it
+- I wanted the model to explain its thought process in each line to see if I could make a sense of what it was going to deliver or if it was only hallucinating.
 
 [Check the actual prompts](https://github.com/mmiglioranza22/chatgptools/blob/main/filename_changer/prompts/file_change_prompts.txt)
+
+<br>
 
 ### Result
 
@@ -24,8 +29,14 @@ Use at your own expense, preferably inside a versioned controlled directory (sho
 
 ### Use example
 
+<br>
+
 #### Normal run (note that total files are affected files + script since I just threw it inside the directory to test it (you would not push the script to your repo))
 
 ![Normal run](https://github.com/mmiglioranza22/chatgptools/blob/main/filename_changer/captures/run.png)
+
+<br>
+
+#### Dry run
 
 ![Dry run](https://github.com/mmiglioranza22/chatgptools/blob/main/filename_changer/captures/dry-run.png)
