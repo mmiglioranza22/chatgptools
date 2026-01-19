@@ -1,0 +1,29 @@
+# First prompt
+
+Your are a software developer with expertise in Python. Write a script that parses all files names in the current directory and changes the files names and extensions as follows: The script should prompt the user to provide a string pattern through the console to know which files should be matched (you can use regex for matching file names with the desired pattern) and once the user provides a pattern, the script should ask which is the string pattern that will replace the original pattern in the files names. Before making any changes, it should parse all files in the directory and count all files that matched the first pattern provided by the user and print through the console and print "[matches_number] files matched the given pattern: [match_pattern]". If no matches are found, it should print through console "No matches found for provided pattern: [match_pattern]. Bye" and script end execution. If matches are indeed found, it should print through console "Matched files names will change [match_pattern] to [new_pattern]. Do you wish to perform file changes? Y/N" and prompt the user for confirmation or cancel. If the user confirms with "Y", it should perform the file name changes and print through console "Done" once the script finishes excecution. Otherwise, if the user cancels with "N", the script should end execution without performing any change and print through console "Abort". For example, when running the script in a specific directory a user wishes to change all file names that match the string ".dto.spec.ts" to ".dto.unit.spec.ts". If there is a file named "tasks.dto.spec.ts", once user is prompted for confirmation and he accepts, the original file "tasks.dto.spec.ts" should now be named "tasks.dto.unit.spec.ts"
+
+
+# Second prompt
+
+Add the recursive version so all files that exist in the directory the script is executed, as well as subdirectories. Add also the option to run the script without making any change with the "dry-run" flag. And finally handle any error that could happen all stages of execution of the script so that the error is printed through the console and the scripts execution terminates without making any changes to files or file names.
+
+
+# Third prompt
+
+Add a simple loading animation to display while the script is performing the file name changes, form the moment the user gives confirmation until the moment the script finishes execution successfully, an error occurs or execution is terminated by keyboard input.
+Add rollback support so if user interrupts script execution at any moment, all changes done to file names are not persisted and the original file names are kept.
+Add excluding directories option: The user should be prompted first of all to indicate which directories the script should exclude and avoid parsing any files inside them, and then be prompted to indicated the match_pattern and the replace_pattern as already done in the script. The user could indicate more than one directory. Script should print to console which directories are being excluded. If directories to be excluded are provided by the user, script should check all of them exist before continuing execution. If at least one of those directories do not exists, print to console this situation and abort execution early.
+
+
+# Forth prompt
+
+Explain in detail your thought process for the last script you provided. I want to understand how you designed the script, what each part of the code does, in particular the packages you imported and the functions or methods you use to achieve your goal.
+
+
+# Fifth prompt
+
+Add unit tests for the script and convert it into a CLI tool.
+
+# Sixth prompt
+
+Add integration tests for the CLI itself. Add mock-based tests for error scenarios. Add CI setup (GitHub Actions). Add Windows-specific path edge cases.
