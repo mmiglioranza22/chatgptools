@@ -20,7 +20,7 @@ From this, I reasoned:
 
 I used the model's responses and adapted them to my own application in NestJS. It eventually became a big project that stripped away all the business related code and left with what I think could be used to bootstrap any NestJS backend application that wants to roll its own auth. [You can check it out here]()
 
-I did not used `csrf-csrf` package as I saw that the model's solution was more comprehensive that the way the package managed it. Besides, it also meant that I could avoid spending even more time learning yet another package and could always come back when my solution started to show its shortcomings.
+I did not use `csrf-csrf` package as I saw that the model's solution was more comprehensive that the way the package managed it. Besides, it also meant that I could avoid spending even more time learning yet another package and could always come back when my solution started to show its shortcomings.
 
 If I have to make a takeaway of all this, is to just use a third-party solution. Chances that login with Google, Github or other company from going down and preventing your users from working in your application are very low. So if auth flows is not something you are particularly interested in or is something that needs to be production-level, don't roll your own. For those who still do, Ben Awad explains how to do this in his [video](https://www.youtube.com/watch?v=CcrgG5MjGOk)
 
