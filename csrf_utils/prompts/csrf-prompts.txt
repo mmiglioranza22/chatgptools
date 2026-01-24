@@ -1,0 +1,13 @@
+# First prompt
+
+You are a software engineer with web security expertise. 
+How can I implement Signed Double Submit Cookie pattern to prevent cookie injection and CSRF attacks in a NestJs application?
+
+# Second prompt
+
+Add timestamped rotation and provide an implementation solution that uses 'csrf-csrf' package.
+But before that, please provide a test files examples for CsrfGuard, CsrfCookieMiddleware and the utility functions in csrf.util.ts file
+
+# Third prompt
+
+Provide unit tests for "csrf.guard.ts" and "csrf-cookie.middleware.ts", and then provide e2e tests.
