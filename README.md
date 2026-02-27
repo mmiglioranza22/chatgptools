@@ -1,8 +1,8 @@
 # chatgptools
 
-I will be adding to this repo some solutions I came up with AI for actual stuff I relinquised from doing manually (Yet instead spent far more time writting accurate prompts than doing the actual task).
+I will be adding to this repo some solutions I came up with AI for actual stuff I relinquished from doing manually (Yet instead spent far more time writting accurate prompts than doing the actual task).
 
-Just simple scripts and tools made with different AI models, their prompts and result.
+You will also find exchanges to spar ideas to develop an understanding of problems I encountered.
 
 # Index
 
